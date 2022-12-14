@@ -1,5 +1,7 @@
 # Twitter Tweet Streaming - Confluent Kafka
-![image](https://user-images.githubusercontent.com/85284506/207523008-63721f3d-356a-44aa-b628-27bbc7f67c70.png)
+![image](https://user-images.githubusercontent.com/85284506/207529566-ef7fb9d0-6c1a-49a2-a0b2-777a2229a92e.png)
+
+Ingest data from Twitter API data source and publish it to a Kafka topic for consumer application to subscribe and consume messages.
 
 ## Install Confluent Kafka
 Using Docker compose, we can install the entire Confluent Platform or individual components.
@@ -31,10 +33,19 @@ Confluent Control Center is a web-based user interface that allows developers an
  + Cluster Settings
 
 ## Twitter API
+First, we need to create user credentials to use Twitter API. Sign up for a developer account at Twitter Developer Portal. Sign in to developer console. Give a name to your app. We will use bearer token for credentials.
 
-### Create APP
+### Create App
+- Go to `https://developer.twitter.com/apps`
+- Create app - fill up the form
+- Change the permission if neccessary (depending if you want to just read / write / execute)
 
-## Python
+### Generate Key
+![image](https://user-images.githubusercontent.com/85284506/207528533-1c528b13-aa07-4a25-af0f-218a6f1d1e73.png)
+![image](https://user-images.githubusercontent.com/85284506/207528573-2e9f6fb3-46ae-435c-b1aa-0624c66406a4.png)
+
+
+## Python Code
 
 ### Create Python Virtual Environment
 ```python
